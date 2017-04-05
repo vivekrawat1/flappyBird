@@ -19,7 +19,8 @@ cc.Class({
             event: cc.EventListener.MOUSE,
             onMouseDown: function (keyCode, event) { console.log("don't let me down") },
             onMouseUp: function (keyCode, event) { console.log('high all the time') },
-            onMouseMove: function () { this.touchNode.setPosition = cc.Event.EventMouse.getLocation()},
+            onMouseMove: function () { this.touchNode.setPosition = cc.Event.EventMouse.getLocation();
+            },
             onMouseScroll: function () { console.log("checck yar") },
         }, this.node);
     }
