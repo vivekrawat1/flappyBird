@@ -2,20 +2,15 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-       gameNode: {
-           type: cc.Node,
-           default:null,
-       }
+      
     },
 
     // use this for initialization
     onLoad: function () {
+        this.node.getChildByName('start').active = true;
+        this.node.getChildByName('game').active = false;
+    },
 
-    },
-    onPlayBtn: function(){
-        this.node.active =  false;
-        this.gameNode.active = true;
-    },
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {
 

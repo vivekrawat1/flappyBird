@@ -2,20 +2,18 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-       gameNode: {
-           type: cc.Node,
-           default:null,
-       }
+      zorder: -10,
     },
 
     // use this for initialization
     onLoad: function () {
+        //var event;
+        //event = cc.Touch.getLocation;
+     
+        console.log(this.node.setLocalZOrder (this.zorder ) );
+        
+    },
 
-    },
-    onPlayBtn: function(){
-        this.node.active =  false;
-        this.gameNode.active = true;
-    },
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {
 
