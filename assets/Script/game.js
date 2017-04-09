@@ -17,6 +17,10 @@ cc.Class({
             default: null,
             type: cc.Node
         },
+        gameOverNode: {
+            default: null,
+            type: cc.Node
+        },
     },
 
     // use this for initialization
@@ -34,7 +38,21 @@ cc.Class({
         }.bind(this));
         this.overAllAction = cc.sequence(combine, cf);
 
+    },
+    onEnable: function () {
+        var manager = cc.director.getCollisionManager();
+        manager.enabled = true;
 
+        // Enabled draw collider
+        manager.enabledDebugDraw = true;
+
+        // Enabled draw collider bounding box
+        manager.enabledDrawBoundingBox = true;
+    },
+
+    onCollisionEnter: function (other, self) {
+
+        console.log("on Collision");
     },
     listenGameStartEvent: function () {
         console.log("in game start..");
@@ -54,8 +72,16 @@ cc.Class({
         var self = this;
         this.groundNode.active = true;
         this.node.parent.on(cc.Node.EventType.TOUCH_START, function (event) {
-
             self.bird.runAction(this.overAllAction);
+            // this is to detect the collision
+            var rect1 = self.bird.getBoundingBox();
+            var rect2 = self.groundNode.getBoundingBox();
+            if (cc.rectIntersectsRect(rect1, rect2)) {
+                console.log("collision detected");
+                self.bird.active = false;
+                self.groundNode.active = false;
+                this.gameOverNode.active = true;
+            };
 
         }, this);
 
