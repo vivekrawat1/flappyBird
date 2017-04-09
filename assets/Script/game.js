@@ -11,7 +11,12 @@ cc.Class({
         bird: {
             default: null,
             type: cc.Node
-        }
+        },
+        // ground node with animation;
+        groundNode: {
+            default: null,
+            type: cc.Node
+        },
     },
 
     // use this for initialization
@@ -47,6 +52,7 @@ cc.Class({
     listenEvent: function () {
         console.log("in game .");
         var self = this;
+        this.groundNode.active = true;
         this.node.parent.on(cc.Node.EventType.TOUCH_START, function (event) {
 
             self.bird.runAction(this.overAllAction);
