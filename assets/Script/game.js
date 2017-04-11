@@ -22,8 +22,8 @@ cc.Class({
     onEnable: function () {
         console.log("in game load.");
 
-        this.listenGameStartEvent();
         this.bird.setPosition(cc.p(0,0));
+        this.listenGameStartEvent();
         var moveUpAction = cc.moveBy(0.3, cc.p(0, 150));
         var rotateUp = cc.rotateTo(0.3, -60);
 

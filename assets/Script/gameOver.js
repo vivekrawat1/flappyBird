@@ -15,9 +15,7 @@ cc.Class({
 
 
         },
-        gameOverFunc: function () {
-            this.gameOver.active = true;
-        },
+       
         onReStartGame: function () {
             Game.node.active = true;
             this.node.active = false;
