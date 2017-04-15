@@ -28,7 +28,7 @@ manager.enabledDrawBoundingBox = true;
         
     },
 onEnable: function(){
-    //think think think !!!!!!!!!!
+  
     this.velocityY = 0;
     this.node.rotation = 0;
 },
