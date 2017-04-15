@@ -15,8 +15,8 @@ cc.Class({
     onPlayBtn: function(){
          this.gameNode.active = true;
         this.node.active =  false;
-       
     },
+   
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {
 

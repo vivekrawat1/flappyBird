@@ -362,7 +362,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 1,
+      "x": 0,
       "y": -118
     },
     "_skewX": 0,
@@ -415,7 +415,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 0
+      "y": 74
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -766,8 +766,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 3,
-      "y": 152
+      "x": 0,
+      "y": 0
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -819,7 +819,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 0
+      "y": 203
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -899,7 +899,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": -123,
-      "y": -131
+      "y": 4
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -982,7 +982,7 @@
     "_enabled": true,
     "startMoving": false,
     "gravity": -300,
-    "rotationVelocity": 80,
+    "rotationVelocity": 100,
     "gameOverNode": {
       "__id__": 27
     }
@@ -1376,11 +1376,11 @@
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 1
+      "y": 0
     },
     "_size": {
       "__type__": "cc.Size",
-      "width": 90,
+      "width": 85,
       "height": 63
     }
   },
@@ -1418,7 +1418,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": -12,
-      "y": -218
+      "y": 14
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1483,12 +1483,12 @@
     "_anchorPoint": {
       "__type__": "cc.Vec2",
       "x": 0.5,
-      "y": 0.5
+      "y": 0
     },
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 1218,
-      "height": 147.5
+      "height": 60
     },
     "_children": [],
     "_rotationX": 0,
@@ -1497,8 +1497,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -1,
-      "y": -400.3
+      "x": 0,
+      "y": -320
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1533,7 +1533,7 @@
     "_spriteFrame": {
       "__uuid__": "c1dcdb5b-6294-44a2-aff8-5ccb720324e2"
     },
-    "_type": 0,
+    "_type": 1,
     "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
@@ -1579,13 +1579,13 @@
     "tag": 1,
     "_offset": {
       "__type__": "cc.Vec2",
-      "x": -24,
-      "y": 8
+      "x": 0,
+      "y": 37
     },
     "_size": {
       "__type__": "cc.Size",
       "width": 1350,
-      "height": 146
+      "height": 41
     }
   },
   {
@@ -1601,6 +1601,9 @@
     },
     "groundNode": {
       "__id__": 40
+    },
+    "pipePrefab": {
+      "__uuid__": "dd8e1d7a-e926-4719-b035-9f0d9130af3c"
     }
   },
   {
